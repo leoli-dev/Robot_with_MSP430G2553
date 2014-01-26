@@ -1,0 +1,16 @@
+void Detecter_Obstacle(int seuilDistanceInfrarouge);
+void Aller_Tout_Droit_Avec_DetecteurLigne(int pasDemande, int seuilDistanceInfrarouge, int seuilBlancDetecteurA, int seuilBlancDetecteurB);
+void Aller_Tout_Droit_Avec_OptoCoupleur(int pasDemande, int seuilDistanceInfrarouge);
+void Reculer_Tout_Droit_Avec_OptoCoupleur(int pasDemande, int seuilDistanceInfrarouge);
+void Tourner_A_Gauche_Avec_OptoCoupleur(int pasDemande);
+void Tourner_A_Droite_Avec_OptoCoupleur(int pasDemande);
+void Tourner_A_Gauche_Avec_DetecteurLigne(int seuilDistanceInfrarouge, int seuilBlancDetecteurA, int seuilBlancDetecteurB);
+void Tourner_A_Droite_Avec_DetecteurLigne(int seuilDistanceInfrarouge, int seuilBlancDetecteurA, int seuilBlancDetecteurB);
+void Traverser_La_Intersection_T_2(int seuilDistanceInfrarouge, int seuilBlancDetecteurA, int seuilBlancDetecteurB);
+void Traverser_La_Intersection_T_4(int seuilDistanceInfrarouge, int seuilBlancDetecteurA, int seuilBlancDetecteurB);
+void Traverser_La_Intersection_T_5(int seuilDistanceInfrarouge, int seuilBlancDetecteurA, int seuilBlancDetecteurB);
+void Traverser_La_Intersection_T_6(int seuilDistanceInfrarouge, int seuilBlancDetecteurA, int seuilBlancDetecteurB);
+void Rentrer_A_La_Maison(int seuilDistanceInfrarouge);
+void Chercher_La_Ligne_90(int seuilBlancDetecteurA, int seuilBlancDetecteurB);
+void Chercher_La_Ligne_360(int seuilBlancDetecteurA, int seuilBlancDetecteurB);
+void Clignoter_LED_Vert(int s);
