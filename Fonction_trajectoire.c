@@ -570,20 +570,6 @@ void Traverser_La_Intersection_T_6(int seuilDistanceInfrarouge, int seuilBlancDe
 	}
 }
 
-void Rentrer_A_La_Maison(int seuilDistanceInfrarouge){
-    int distance;
-    while(1){
-		init_ADC_Infrarouge();
-		distance = ReadAdc();
-		if(distance < seuilDistanceInfrarouge){
-			// Avancer le robot
-			robot_avancer(20, 100);
-		}else{
-			break;
-		}
-	}
-}
-
 void Chercher_La_Ligne_90(int seuilBlancDetecteurA, int seuilBlancDetecteurB){
 	// attendre un peu
 	tempo(500);

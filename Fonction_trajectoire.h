@@ -10,7 +10,6 @@ void Traverser_La_Intersection_T_2(int seuilDistanceInfrarouge, int seuilBlancDe
 void Traverser_La_Intersection_T_4(int seuilDistanceInfrarouge, int seuilBlancDetecteurA, int seuilBlancDetecteurB);
 void Traverser_La_Intersection_T_5(int seuilDistanceInfrarouge, int seuilBlancDetecteurA, int seuilBlancDetecteurB);
 void Traverser_La_Intersection_T_6(int seuilDistanceInfrarouge, int seuilBlancDetecteurA, int seuilBlancDetecteurB);
-void Rentrer_A_La_Maison(int seuilDistanceInfrarouge);
 void Chercher_La_Ligne_90(int seuilBlancDetecteurA, int seuilBlancDetecteurB);
 void Chercher_La_Ligne_360(int seuilBlancDetecteurA, int seuilBlancDetecteurB);
 void Clignoter_LED_Vert(int s);

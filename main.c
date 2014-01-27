@@ -55,8 +55,7 @@ __interrupt void Port_1(void)
     int etat_P1_2 = ReadAdc();
     
     // "00":HOPITAL
-    //if((P1IN&BIT1)==0&&(P1IN&BIT2)==0){
-    if(etat_P1_1 < seuilSwitchON && etat_P1_2 < seuilSwitchON){                   
+    if(etat_P1_1 < seuilSwitchON && etat_P1_2 < seuilSwitchON){
         // 1: sortir la maison( environ 3.5cm )
         Aller_Tout_Droit_Avec_OptoCoupleur(7, seuilDistanceInfrarouge);
         // 2: chercher la ligne
@@ -114,13 +113,17 @@ __interrupt void Port_1(void)
         // 28: passer la 5eme intersection T
         Traverser_La_Intersection_T_4(seuilDistanceInfrarouge, seuilBlancDetecteurA, seuilBlancDetecteurB);
         // 29: avancer ( environ 56cm )
-        Aller_Tout_Droit_Avec_DetecteurLigne(99, seuilDistanceInfrarouge, seuilBlancDetecteurA, seuilBlancDetecteurB);
+        Aller_Tout_Droit_Avec_DetecteurLigne(99, seuilDistanceInfrarouge, seuilBlancDetecteurA, seuilBlancDetecteurB);        
         // 30: repasser par la 1ere intersection T
         Traverser_La_Intersection_T_6(seuilDistanceInfrarouge, seuilBlancDetecteurA, seuilBlancDetecteurB);
-        // 31: avancer ( environ 20cm )
-        Aller_Tout_Droit_Avec_DetecteurLigne(36, seuilDistanceInfrarouge, seuilBlancDetecteurA, seuilBlancDetecteurB);
+        // 31: avancer ( environ 25cm )
+        Aller_Tout_Droit_Avec_DetecteurLigne(45, seuilDistanceInfrarouge, seuilBlancDetecteurA, seuilBlancDetecteurB);
         // 32: rentrer a la maison
-        Rentrer_A_La_Maison(seuilDistanceInfrarouge);            	
+        Aller_Tout_Droit_Avec_OptoCoupleur(24, seuilDistanceInfrarouge);
+        // 33: attendre un peu
+        tempo(500);
+        // 34: tourner 180 degree
+        Tourner_A_Droite_Avec_OptoCoupleur(24);
     }
     
     // "01":BOULANGERIE
@@ -181,10 +184,14 @@ __interrupt void Port_1(void)
         Aller_Tout_Droit_Avec_DetecteurLigne(115, seuilDistanceInfrarouge, seuilBlancDetecteurA, seuilBlancDetecteurB); 
         // 28: repasser la 1ere intersection T
         Traverser_La_Intersection_T_4(seuilDistanceInfrarouge, seuilBlancDetecteurA, seuilBlancDetecteurB);
-        // 30: avancer ( environ 20cm )
-        Aller_Tout_Droit_Avec_DetecteurLigne(36, seuilDistanceInfrarouge, seuilBlancDetecteurA, seuilBlancDetecteurB);
-        // 31: rentrer a la maison
-        Rentrer_A_La_Maison(seuilDistanceInfrarouge);
+        // 29: avancer ( environ 25cm )
+        Aller_Tout_Droit_Avec_DetecteurLigne(45, seuilDistanceInfrarouge, seuilBlancDetecteurA, seuilBlancDetecteurB);
+        // 30: rentrer a la maison
+        Aller_Tout_Droit_Avec_OptoCoupleur(24, seuilDistanceInfrarouge);
+        // 31: attendre un peu
+        tempo(500);
+        // 32: tourner 180 degree
+        Tourner_A_Droite_Avec_OptoCoupleur(24);
     }
     
     // "10":POSTE
@@ -209,10 +216,10 @@ __interrupt void Port_1(void)
         Aller_Tout_Droit_Avec_DetecteurLigne(20, seuilDistanceInfrarouge, seuilBlancDetecteurA, seuilBlancDetecteurB);
         // 10: tourner a droite pour entrer la 3eme intersection T
         Tourner_A_Droite_Avec_DetecteurLigne(seuilDistanceInfrarouge, seuilBlancDetecteurA, seuilBlancDetecteurB);
-        // 11: avancer ( environ 52cm )
-        Aller_Tout_Droit_Avec_DetecteurLigne(92, seuilDistanceInfrarouge, seuilBlancDetecteurA, seuilBlancDetecteurB);
+        // 11: avancer ( environ 54cm )
+        Aller_Tout_Droit_Avec_DetecteurLigne(95, seuilDistanceInfrarouge, seuilBlancDetecteurA, seuilBlancDetecteurB);        
         // 12: avancer pouer enter la Poste ( environ 21.5cm )
-        Aller_Tout_Droit_Avec_OptoCoupleur(37, seuilDistanceInfrarouge);
+        Aller_Tout_Droit_Avec_OptoCoupleur(37, seuilDistanceInfrarouge);                
         // 13: attendre 5s
         Clignoter_LED_Vert(5);
         // 14: reculer ( environ 20cm )
@@ -245,10 +252,14 @@ __interrupt void Port_1(void)
         Aller_Tout_Droit_Avec_DetecteurLigne(99, seuilDistanceInfrarouge, seuilBlancDetecteurA, seuilBlancDetecteurB);
         // 28: repasser par la 1ere intersection T
         Traverser_La_Intersection_T_6(seuilDistanceInfrarouge, seuilBlancDetecteurA, seuilBlancDetecteurB);
-        // 29: avancer ( environ 20cm )
-        Aller_Tout_Droit_Avec_DetecteurLigne(36, seuilDistanceInfrarouge, seuilBlancDetecteurA, seuilBlancDetecteurB);
+        // 29: avancer ( environ 25cm )
+        Aller_Tout_Droit_Avec_DetecteurLigne(45, seuilDistanceInfrarouge, seuilBlancDetecteurA, seuilBlancDetecteurB);
         // 30: rentrer a la maison
-        Rentrer_A_La_Maison(seuilDistanceInfrarouge);
+        Aller_Tout_Droit_Avec_OptoCoupleur(24, seuilDistanceInfrarouge);
+        // 31: attendre un peu
+        tempo(500);
+        // 32: tourner 180 degree
+        Tourner_A_Droite_Avec_OptoCoupleur(24);
     }
     
     // "11":BANQUE
@@ -294,7 +305,7 @@ __interrupt void Port_1(void)
         // 20: tourner a gauche
         Tourner_A_Gauche_Avec_DetecteurLigne(seuilDistanceInfrarouge, seuilBlancDetecteurA, seuilBlancDetecteurB);
         // 21: avancer ( environ 19cm )
-        Aller_Tout_Droit_Avec_DetecteurLigne(35, seuilDistanceInfrarouge, seuilBlancDetecteurA, seuilBlancDetecteurB);
+        Aller_Tout_Droit_Avec_DetecteurLigne(33, seuilDistanceInfrarouge, seuilBlancDetecteurA, seuilBlancDetecteurB);        
         // 22: avancer pouer enter la Banque ( environ 21.5cm )
         Aller_Tout_Droit_Avec_OptoCoupleur(37, seuilDistanceInfrarouge);
         // 23: attendre 5s
@@ -302,11 +313,11 @@ __interrupt void Port_1(void)
         // 24: reculer ( environ 20cm )
         Reculer_Tout_Droit_Avec_OptoCoupleur(34, seuilDistanceInfrarouge);
         // 25: attendre un peu
-        tempo(500);
+        tempo(500);        
         // 26: chercher la ligne
-        Chercher_La_Ligne_360(seuilBlancDetecteurA, seuilBlancDetecteurB);
-        // 27: avancer ( environ 18cm )
-        Aller_Tout_Droit_Avec_DetecteurLigne(32, seuilDistanceInfrarouge, seuilBlancDetecteurA, seuilBlancDetecteurB);
+        Chercher_La_Ligne_360(seuilBlancDetecteurA, seuilBlancDetecteurB);        
+        // 27: avancer ( environ 12cm )
+        Aller_Tout_Droit_Avec_DetecteurLigne(21, seuilDistanceInfrarouge, seuilBlancDetecteurA, seuilBlancDetecteurB);       
         // 28: tourner a droite
         Tourner_A_Droite_Avec_DetecteurLigne(seuilDistanceInfrarouge, seuilBlancDetecteurA, seuilBlancDetecteurB);
         // 29: avancer ( environ 23cm )
@@ -317,10 +328,14 @@ __interrupt void Port_1(void)
         Aller_Tout_Droit_Avec_DetecteurLigne(115, seuilDistanceInfrarouge, seuilBlancDetecteurA, seuilBlancDetecteurB);
         // 32: repasser la 1ere intersection T
         Traverser_La_Intersection_T_4(seuilDistanceInfrarouge, seuilBlancDetecteurA, seuilBlancDetecteurB);
-        // 33: avancer ( environ 20cm )
-        Aller_Tout_Droit_Avec_DetecteurLigne(36, seuilDistanceInfrarouge, seuilBlancDetecteurA, seuilBlancDetecteurB);
+        // 33: avancer ( environ 25cm )
+        Aller_Tout_Droit_Avec_DetecteurLigne(45, seuilDistanceInfrarouge, seuilBlancDetecteurA, seuilBlancDetecteurB);
         // 34: rentrer a la maison
-        Rentrer_A_La_Maison(seuilDistanceInfrarouge);
+        Aller_Tout_Droit_Avec_OptoCoupleur(24, seuilDistanceInfrarouge);
+        // 35: attendre un peu
+        tempo(500);
+        // 36: tourner 180 degree
+        Tourner_A_Droite_Avec_OptoCoupleur(24);
     }
 
     P1IFG &= ~BUTTON; // P1.3 IFG cleared
