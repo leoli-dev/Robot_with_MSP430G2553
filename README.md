@@ -4,22 +4,23 @@ This is the source code of a project, which need to be done in the end of a cour
 
 I got so much fun while doing this project, and I miss my little robot (it has been recycled at the end of the project T_T), here it is:
 
-![robot image 1](http://res.cloudinary.com/dvlfojetn/image/upload/c_scale,w_800/v1478733456/Public/IMG_5804.jpg)
+![robot image 1](http://res.cloudinary.com/dvlfojetn/image/upload/c_scale,w_500/v1478733456/Public/IMG_5804.jpg)
 
-![robot image 2](http://res.cloudinary.com/dvlfojetn/image/upload/c_scale,h_800/v1478733460/Public/IMG_5810.jpg)
+![robot image 2](http://res.cloudinary.com/dvlfojetn/image/upload/c_scale,h_500/v1478733460/Public/IMG_5810.jpg)
 
-![robot image 3](http://res.cloudinary.com/dvlfojetn/image/upload/c_scale,w_800/v1478733463/Public/IMG_5816.jpg)
+![robot image 3](http://res.cloudinary.com/dvlfojetn/image/upload/c_scale,w_500/v1478733463/Public/IMG_5816.jpg)
 
 And I filmed some videos for it too:
 
 * Test with destination: "HOPITAL"
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/6ctBbWgL4DU" frameborder="0" allowfullscreen></iframe>
+<a href="http://www.youtube.com/watch?feature=player_embedded&v=6ctBbWgL4DU" target="_blank"><img src="http://img.youtube.com/vi/6ctBbWgL4DU/0.jpg" alt="IMAGE ALT TEXT HERE" width="480" height="360" border="10" /></a>
 
 * Test with destination: "BOULANGERIE"
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/Eskt7FHoRMg" frameborder="0" allowfullscreen></iframe>
+<a href="http://www.youtube.com/watch?feature=player_embedded&v=Eskt7FHoRMg" target="_blank"><img src="http://img.youtube.com/vi/Eskt7FHoRMg/0.jpg" alt="IMAGE ALT TEXT HERE" width="480" height="360" border="10" /></a>
 
 * Final match
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/WWXYZd1ma9A" frameborder="0" allowfullscreen></iframe>
+<a href="http://www.youtube.com/watch?feature=player_embedded&v=WWXYZd1ma9A" target="_blank"><img src="http://img.youtube.com/vi/WWXYZd1ma9A/0.jpg" alt="IMAGE ALT TEXT HERE" width="480" height="360" border="10" /></a>
+
