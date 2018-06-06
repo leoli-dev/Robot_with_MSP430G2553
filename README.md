@@ -14,13 +14,16 @@ And I filmed some videos for it too:
 
 * Test with destination: "HOPITAL"
 
-<a href="http://www.youtube.com/watch?feature=player_embedded&v=6ctBbWgL4DU" target="_blank"><img src="http://img.youtube.com/vi/6ctBbWgL4DU/0.jpg" alt="IMAGE ALT TEXT HERE" width="480" height="360" border="10" /></a>
+![image](http://img.youtube.com/vi/6ctBbWgL4DU/0.jpg)
+[> Youtube Video](http://www.youtube.com/watch?feature=player_embedded&v=6ctBbWgL4DU)
 
 * Test with destination: "BOULANGERIE"
 
-<a href="http://www.youtube.com/watch?feature=player_embedded&v=Eskt7FHoRMg" target="_blank"><img src="http://img.youtube.com/vi/Eskt7FHoRMg/0.jpg" alt="IMAGE ALT TEXT HERE" width="480" height="360" border="10" /></a>
+![image](http://img.youtube.com/vi/Eskt7FHoRMg/0.jpg)
+[> Youtube Video](http://www.youtube.com/watch?feature=player_embedded&v=Eskt7FHoRMg)
 
 * Final match
 
-<a href="http://www.youtube.com/watch?feature=player_embedded&v=WWXYZd1ma9A" target="_blank"><img src="http://img.youtube.com/vi/WWXYZd1ma9A/0.jpg" alt="IMAGE ALT TEXT HERE" width="480" height="360" border="10" /></a>
+![image](http://img.youtube.com/vi/WWXYZd1ma9A/0.jpg)
+[> Youtube Video](http://www.youtube.com/watch?feature=player_embedded&v=WWXYZd1ma9A)
 
